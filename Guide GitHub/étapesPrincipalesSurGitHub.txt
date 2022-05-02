@@ -1,0 +1,13 @@
+Clone : dupliquer le dépôt de GitHub vers votre machine
+  Via l'interface web GitHub en utilisant le bouton Code de l'onglet Code
+  En utilisant le lien donner par ce bouton dans SmartGit ou autres outils
+  En utilisant le lien avec la commande git clone dans le terminal de la machine
+  
+Modify : modifier les fichiers copiés en local sur votre machine
+  
+Stage : déterminer les changements que vous voulez synchroniser
+  
+
+Commit : envoyer vos modifications
+
+Sync : synchroniser vos changements avec le dépôt
