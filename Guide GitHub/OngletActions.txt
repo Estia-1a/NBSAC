@@ -1,0 +1,86 @@
+GitHub – Onglet ACTIONS et WIKI
+
+ACTIONS
+
+GitHub Actions vous permet d'automatiser facilement tous vos flux de travail logiciels, désormais avec un système CI/CD de classe mondiale.
+Créez, testez et déployez votre code directement depuis GitHub.
+
+Automatisez votre flux de travail, de l'idée à la production
+
+Linux, macOS, Windows, ARM, and containers
+Les runners hébergés pour tous les principaux systèmes d'exploitation facilitent la création et le test de tous vos projets.
+Exécutez directement sur une machine virtuelle ou dans un conteneur. Utilisez vos propres machines virtuelles, dans le nuage ou sur site,
+avec les runners hébergés.
+
+Matrix builds
+Gagnez du temps grâce aux flux de travail matriciels qui testent simultanément plusieurs systèmes d'exploitation et versions de votre moteur d'exécution.
+
+Any language
+GitHub Actions prend en charge Node.js, Python, Java, Ruby, PHP, Go, Rust, .NET, etc. Créez, testez et déployez des applications
+dans le langage de votre choix.
+
+Live logs
+Voyez votre flux de travail s'exécuter en temps réel avec des couleurs et des emoji. Il suffit d'un clic pour copier un lien
+qui met en évidence un numéro de ligne spécifique pour partager un échec de CI/CD.
+
+Built-in secret store
+Automatisez vos pratiques de développement logiciel grâce à des fichiers de flux de travail adoptant le flux Git en le codifiant dans votre référentiel.
+
+Multi-container testing
+Testez votre service web et sa base de données dans votre flux de travail en ajoutant simplement quelques
+docker-compose à votre fichier de flux de travail.
+
+
+
+POUR ALLER PLUS LOIN
+
+APERCU
+
+GitHub Actions est une plateforme d'intégration et de livraison continues (CI/CD) qui vous permet d'automatiser votre pipeline de construction,
+de test et de déploiement. Vous pouvez créer des flux de travail qui construisent et testent chaque demande d'extraction vers votre dépôt, ou qui
+déploient les demandes d'extraction fusionnées vers la production.
+GitHub Actions va au-delà de DevOps et vous permet d'exécuter des flux de travail lorsque d'autres événements se produisent dans votre dépôt.
+Par exemple, vous pouvez exécuter un flux de travail pour ajouter automatiquement les étiquettes appropriées lorsque quelqu'un crée un nouveau
+problème dans votre dépôt.
+GitHub fournit des machines virtuelles Linux, Windows et macOS pour exécuter vos flux de travail, ou vous pouvez héberger vos propres exécutions
+dans votre propre centre de données ou infrastructure cloud.
+
+
+ACTIONS
+
+Une action est une application personnalisée de la plateforme GitHub Actions qui exécute une tâche complexe mais fréquemment répétée.
+Utilisez une action pour réduire la quantité de code répétitif que vous écrivez dans vos fichiers de flux de travail. Une action peut extraire
+votre dépôt git de GitHub, configurer la chaîne d'outils correcte pour votre environnement de construction ou configurer l'authentification auprès de
+votre fournisseur de cloud.
+Vous pouvez écrire vos propres actions ou trouver des actions à utiliser dans vos flux de travail sur le marketplace GitHub.
+
+
+WORKFLOWS
+
+Un flux de travail est un processus automatisé configurable qui exécutera un ou plusieurs travaux. Les flux de travail sont définis par un fichier YAML
+enregistré dans votre référentiel et s'exécutent lorsqu'ils sont déclenchés par un événement dans votre référentiel, ou ils peuvent être déclenchés
+manuellement, ou selon un calendrier défini.
+Les workflows sont définis dans le répertoire .github/workflows d'un dépôt, et un dépôt peut avoir plusieurs workflows, chacun d'entre eux pouvant
+exécuter un ensemble de tâches différent. Par exemple, vous pouvez avoir un flux de travail pour construire et tester les demandes de retrait,
+un autre flux de travail pour déployer votre application chaque fois qu'une version est créée, et encore un autre flux de travail qui ajoute une
+étiquette chaque fois que quelqu'un ouvre un nouveau problème.
+
+
+EVENTS
+
+Un événement est une activité spécifique dans un référentiel qui déclenche l'exécution d'un workflow. Par exemple, l'activité peut provenir de GitHub
+lorsque quelqu'un crée une demande de retrait, ouvre un problème ou envoie un commit dans un référentiel. Vous pouvez également déclencher l'exécution
+ d'un flux de travail selon une planification, en envoyant un message à une API REST ou manuellement.
+
+
+JOBS
+
+Une tâche est un ensemble d'étapes d'un flux de travail qui s'exécutent sur le même exécutant. Chaque étape est soit un script shell qui sera exécuté,
+soit une action qui sera exécutée. Les étapes sont exécutées dans l'ordre et sont dépendantes les unes des autres. Comme chaque étape est exécutée sur
+le même runner, vous pouvez partager des données d'une étape à l'autre. Par exemple, vous pouvez avoir une étape qui construit votre application suivie
+d'une étape qui teste l'application qui a été construite.
+Vous pouvez configurer les dépendances d'un job avec d'autres jobs ; par défaut, les jobs n'ont pas de dépendances et s'exécutent en parallèle les uns
+avec les autres. Lorsqu'un travail est dépendant d'un autre travail, il attend que le travail dépendant soit terminé avant de s'exécuter. Par exemple,
+vous pouvez avoir plusieurs tâches de construction pour différentes architectures qui n'ont pas de dépendances, et une tâche de conditionnement qui
+dépend de ces tâches. Les tâches de construction s'exécutent en parallèle et, une fois qu'elles se sont toutes terminées avec succès, la tâche de
+conditionnement s'exécute.
