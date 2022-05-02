@@ -1,0 +1,14 @@
+Un projet est une feuille personnalisable qui s'intègre à vos problèmes et demandes d'extraction sur GitHub. Il est possible de personnaliser la mise en page 
+en filtrant, triant et regroupant vos problèmes. Vous pouvez également ajouter des champs personnalisés pour suivre les métadonnées du code. Les projets sont 
+flexibles afin que votre équipe puisse travailler de la manière qui lui convient le mieux et sur le même fichier.
+
+Vous pouvez utiliser des champs personnalisés pour ajouter des métadonnées à vos tâches. Par exemple, vous pouvez suivre les métadonnées suivantes :
+•	un champ de date pour suivre les dates d'expédition cibles
+•	un champ numérique pour suivre la complexité d'une tâche
+•	un seul champ de sélection pour savoir si une tâche est de priorité faible, moyenne ou élevée
+•	un champ de texte pour ajouter une note rapide
+•	un champ d'itération pour planifier le travail semaine par semaine, y compris la prise en charge des pauses
+
+On peut ajouter les problèmes sur le projet à cote du code et trier ses soucis par ordre de priorité.
+
+
